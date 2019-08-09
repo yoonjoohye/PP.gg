@@ -1,0 +1,45 @@
+
+.logo {
+  &-pingpong{
+    width:45px;
+    height:45px;
+  }
+
+  &-login{
+    width:45px;
+    height:45px;
+  }
+
+  &-register{
+    width:45px;
+    height:45px;
+  }
+
+  &-logout{
+    width:30px;
+    height:30px;
+  }
+}
+
+.underline {
+  z-index: 9999999;
+  text-transform: uppercase;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    top: 120%;
+    height: 2px;
+    transition: all 0.5s;
+    transform: scale(0, 1);
+    background-image: linear-gradient(to left, #efa559, #fce129);
+  }
+  &:hover::after {
+    transform: scale(1);
+  }
+}
+
+

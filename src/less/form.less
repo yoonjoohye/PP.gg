@@ -1,0 +1,56 @@
+.input {
+  border: 0;
+  border-bottom: 1px solid #dedede;
+  background-color: transparent;
+  padding: 5px 10px;
+  font-size: 14px;
+  color: #525252;
+  font-weight: 300;
+
+  &.input-lg {
+    width: 100%;
+    padding:0.3rem 0.5rem;
+    font-size:20px;
+  }
+
+  &:focus {
+    outline: none;
+    border-color: #dc3545;
+
+  }
+}
+
+input::-webkit-input-placeholder {
+  color: #a6a6a6;
+  font-size: 20px;
+  font-weight:300;
+}
+
+input::-webkit-input-placeholder { /* 크롬 4–56 */
+  color: #a6a6a6;
+  font-size: 20px;
+  font-weight:300;
+}
+
+input:-moz-placeholder { /* 파이어폭스 4–18 */
+  color: #a6a6a6;
+  font-size: 20px;
+  font-weight:300;
+}
+
+input::-moz-placeholder { /* 파이어폭스 19–50 */
+  color: #a6a6a6;
+  font-size: 20px;
+  font-weight:300;
+}
+
+input:-ms-input-placeholder { /* 인터넷 익스플로러 10+ */
+  color: #a6a6a6;
+  font-size: 20px;
+  font-weight:300;
+}
+
+input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder { /* WebKit browsers */ color:transparent; }
+input:focus:-moz-placeholder, textarea:focus:-moz-placeholder { /* Mozilla Firefox 4 to 18 */ color:transparent; }
+input:focus::-moz-placeholder, textarea:focus::-moz-placeholder { /* Mozilla Firefox 19+ */ color:transparent; }
+input:focus:-ms-input-placeholder, textarea:focus:-ms-input-placeholder { /* Internet Explorer 10+ */ color:transparent; }
