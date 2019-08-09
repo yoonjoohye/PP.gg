@@ -2,8 +2,7 @@
     <div class="container">
         <div class="alert alert-warning alert-dismissible fade show" role="alert">
             pp.gg는 '신라'의 신분제도를 도입하고 있습니다.
-            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span
-                    aria-hidden="true">&times;</span></button>
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         </div>
 
         <RankComponent :info="info"></RankComponent>
@@ -11,7 +10,7 @@
 </template>
 
 <script>
-    import RankComponent from '@/components/RankComponent.vue'
+    import RankComponent from '@/components/rank/RankComponent.vue'
 
     export default {
         components: {

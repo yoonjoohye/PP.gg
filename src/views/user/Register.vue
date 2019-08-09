@@ -1,7 +1,7 @@
 <template>
     <div class="bg-red background d-flex flex-row justify-content-center align-items-center">
         <div class="d-flex flex-column justify-content-center align-items-center login-box shadow-lg">
-            <img class="logo-register mb-3" src="../assets/logo/register.svg">
+            <img class="logo-register mb-3" src="../../assets/logo/register.svg">
             <h1 class="text-left mb-5">JOIN IN</h1>
             <input class="input input-lg mb-2" type="text" v-model="name" placeholder="이름 입력">
             <input class="input input-lg mb-2" type="text" v-model="email" placeholder="이메일 입력">

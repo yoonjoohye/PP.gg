@@ -4,7 +4,7 @@
 
 <script>
     export default {
-        name: "PostGame"
+        name: "PostMatchComponent"
     }
 </script>
 

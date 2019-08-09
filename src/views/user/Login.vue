@@ -3,7 +3,7 @@
         <div class="mr-5">
         </div>
         <div class="d-flex flex-column justify-content-center align-items-center login-box shadow-lg">
-            <img class="logo-login mb-3" src="../assets/logo/login.svg">
+            <img class="logo-login mb-3" src="../../assets/logo/login.svg">
             <h1 class="text-left mb-5">LOG IN</h1>
 
             <input class="input input-lg mb-2" type="text" v-model="email" placeholder="이메일 입력">
