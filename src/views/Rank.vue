@@ -4,8 +4,22 @@
             pp.gg는 '신라'의 신분제도를 도입하고 있습니다.
             <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         </div>
-
-        <RankComponent :info="info"></RankComponent>
+        <!--성골-->
+        <div class="d-flex flex-row justify-content-center mb-2">
+            <RankComponent v-for="(item,index) in info" :item="item" :class="info.length>1?'mr-2':''" v-if="parseInt(item.no)===1"></RankComponent>
+        </div>
+        <!--진골-->
+        <div class="d-flex flex-row justify-content-center mb-2">
+            <RankComponent v-for="(item,index) in info" :item="item" :class="info.length>1?'mr-2':''" v-if="parseInt(item.no)>1 && parseInt(item.no)<=4"></RankComponent>
+        </div>
+        <!--평민-->
+        <div class="d-flex flex-row justify-content-center mb-2">
+            <RankComponent v-for="(item,index) in info" :item="item" :class="info.length>1?'mr-2':''" v-if="parseInt(item.no)>4 && parseInt(item.no)<=8"></RankComponent>
+        </div>
+        <!--불가촉천민-->
+        <div class="d-flex flex-row justify-content-center mb-2">
+            <RankComponent v-for="(item,index) in info" :item="item" :class="info.length>1?'mr-2':''" v-if="parseInt(item.no)>8"></RankComponent>
+        </div>
     </div>
 </template>
 

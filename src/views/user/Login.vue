@@ -6,7 +6,7 @@
             <img class="logo-login mb-3" src="../../assets/logo/login.svg">
             <h1 class="text-left mb-5">LOG IN</h1>
 
-            <input class="input input-lg mb-2" type="text" v-model="email" placeholder="이메일 입력">
+            <input class="input input-lg mb-3" type="text" v-model="email" placeholder="이메일 입력">
             <input class="input input-lg mb-4" type="password" v-model="password" placeholder="●●●●●●●●" @keypress.enter="login">
 
             <button class="btn btn-lg btn-block btn-danger shadow mb-5" @click="login">로그인</button>

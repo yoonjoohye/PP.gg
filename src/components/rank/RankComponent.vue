@@ -1,51 +1,25 @@
 <template>
-    <div>
-        <!--성골-->
-        <div class="d-flex flex-row justify-content-center mb-3">
-            <div class="border p-4 mr-3 pointer" v-for="(item,index) in info" v-if="parseInt(item.no)===1">
-                <div>{{item.no}}</div>
-                <div>{{item.name}}</div>
-                <div>{{item.rank}}</div>
-                <div>{{item.analytics}}</div>
-            </div>
+    <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="../../assets/logo/crown.svg">
+        <div class="card-body">
+            <h5 class="card-title">{{item.name}}</h5>
+            <div class="card-text">{{item.rank}}</div>
+            <div class="card-text">랭킹 {{item.no}}</div>
+            <a href="#" class="btn w-100 btn-danger">{{item.analytics}}</a>
         </div>
-
-        <!--진골-->
-        <div class="d-flex flex-row justify-content-center mb-3">
-            <div class="border p-4 mr-3 pointer" v-for="(item,index) in info" v-if="parseInt(item.no)>1 && parseInt(item.no)<=4">
-                <div>{{item.no}}</div>
-                <div>{{item.name}}</div>
-                <div>{{item.rank}}</div>
-                <div>{{item.analytics}}</div>
-            </div>
-        </div>
-
-        <!--평민-->
-        <div class="d-flex flex-row justify-content-center mb-3">
-            <div class="border p-4 mr-3 pointer" v-for="(item,index) in info" v-if="parseInt(item.no)>4 &&parseInt(item.no)<9">
-                <div>{{item.no}}</div>
-                <div>{{item.name}}</div>
-                <div>{{item.rank}}</div>
-                <div>{{item.analytics}}</div>
-            </div>
-        </div>
-
-        <!--불가촉천민-->
-        <div class="d-flex flex-row justify-content-center">
-            <div class="border p-4 mr-3 pointer" v-for="(item,index) in info" v-if="parseInt(item.no)>=9">
-                <div>{{item.no}}</div>
-                <div>{{item.name}}</div>
-                <div>{{item.rank}}</div>
-                <div>{{item.analytics}}</div>
-            </div>
-        </div>
-
     </div>
+
+    <!--<div class="border p-4 mr-3 pointer">-->
+        <!--<div>{{item.no}}</div>-->
+        <!--<div>{{item.name}}</div>-->
+        <!--<div>{{item.rank}}</div>-->
+        <!--<div>{{item.analytics}}</div>-->
+    <!--</div>-->
 </template>
 
 <script>
     export default {
-        props: ['info'],
+        props: ['item'],
 
     }
 </script>
