@@ -4,7 +4,7 @@
 
 Skills
 --
-> Vue.js + TailWindCSS +less
+> Vue.js + Bootstrap4 +less
 
 Setup
 --
